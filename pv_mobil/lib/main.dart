@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future _incrementCounter() async {
     _counter = await FlutterBarcodeScanner.scanBarcode(
-        "#004297", "Cancel", true, ScanMode.BARCODE);
+        "#004297", "Cancel", true, ScanMode.DEFAULT);
 
     setState(() {
       value = _counter;
